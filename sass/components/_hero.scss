@@ -1,0 +1,41 @@
+.hero {
+    text-align: center;
+    background: #C4C4C4;
+}
+
+.hero__overlay {
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 600px;
+    max-width: 1600px;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero__container {
+    @extend %container;
+}
+
+.hero__title {
+    padding: 200px 252px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button {
+    @extend %button;
+}

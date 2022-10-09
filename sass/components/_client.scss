@@ -1,0 +1,35 @@
+.client {
+    @extend %container;
+    @extend %section;
+    text-align: center;
+}
+
+.client__list {
+    @extend %list;
+    display: flex;
+}
+
+.client__link {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        fill: $accentColor;}
+}
+
+.client__item {
+    margin-right: 30px;
+    margin-top: 50px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        border-color: $accentColor;}
+}
+
+
+

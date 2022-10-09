@@ -1,0 +1,44 @@
+.priorities__container {
+    @extend %container;
+}
+.priorities__list {
+    @extend %list;
+    display: flex;
+    padding-top: 94px;
+}
+
+.priorities__subtitle {
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $titleColor;
+}
+
+.priorities__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.priorities__icon {
+    padding: 25px 102px;
+
+    width: 65px;
+    height: 70px;
+
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.priorities__text {
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $textColor;
+}
